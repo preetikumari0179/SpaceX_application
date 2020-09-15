@@ -1,0 +1,74 @@
+<div class="app">
+
+  <header>
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark " style="background-color: #212121;">
+      <a class="navbar-brand" routerLink="/">
+        <span class="mr-1" style="color:white">Assignment</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+        aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" routerLink="/">
+              <i class="fas fa-home mr-1"></i>home
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container-fluid">
+      <div class="row justify-content-center pb-4">
+        <div class="col-md-3 text-center">
+          <div class="list-group">
+            <button *ngFor="let item of features; let i=index" (click)="changeItem(item)" type="button"
+              class="list-group-item list-group-item-action active" [ngClass]="{active : item == current}"
+              >{{ item }}</button>
+          </div>
+
+          <div class="list-group">
+            <button (click)="changeSuccess(true)" type="button"
+              class="list-group-item" [ngClass]="{active : currentSucc == 'true'}"
+              >True</button>
+              <button (click)="changeSuccess(false)" type="button"
+              class="list-group-item" [ngClass]="{active : currentSucc == 'false'}"
+              >False</button>
+          </div>
+
+        </div>
+        <div class="col-md-9 text-center">
+                    
+          <ng-container  *ngFor="let site of dataList">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" [src]="site?.links?.mission_patch" alt="Card image cap">
+              <div class="card-body">
+                <p>{{site?.mission_name}}</p>
+                <p>Mission Ids</p>
+                  <ul>
+                    <li *ngFor="let id of site?.mission_id"> {{id}} </li>
+                  </ul>
+                  <p>Launch year: {{site?.launch_year}} </p>                
+                  <p>Successful launch: {{site?.launch_success}} </p>
+                  <p>Successful landing: {{site?.land_success}} </p>
+              </div>
+            </div>
+          </ng-container>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <p class="text-center text-white">&copy; 2020</p>
+        </div>
+      </div>
+    </div>
+  </div>
