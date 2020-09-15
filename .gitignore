@@ -1,0 +1,5 @@
+# Ignore all IDE generated files
+.idea
+
+# Ignore all Node.js and NPM related paths
+node_modules
