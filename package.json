@@ -2,8 +2,8 @@
   "name": "spacex-application-app",
   "version": "10.0.14",
   "engines": {
-    "node": "6.11.0",
-    "npm": "3.10.10"
+    "node": "14.5.0",
+    "npm": "5.5.1"
   },
   "scripts": {
     "ng": "ng",
@@ -16,18 +16,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ganatan/angular-example-bootstrap.git"
+    "url": "https://github.com/preetikumari0179/angular-example-bootstrap.git"
   },
   "author": {
-    "name": "danny",
-    "email": "dannyganatan@gmail.com",
-    "url": "https://www.ganatan.com/"
+    "name": "priti",
+    "email": "preetikumari0179@gmail.com",
+    "url": "https://www.preetikumari0179.com/"
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ganatan/angular-example-bootstrap/issues"
+    "url": "https://github.com/preetikumari0179/angular-example-bootstrap/issues"
   },
-  "homepage": "https://github.com/ganatan/angular-example-bootstrap#readme",
+  "homepage": "https://github.com/preetikumari0179/angular-example-bootstrap#readme",
   "private": true,
   "dependencies": {
     "@angular-devkit/build-angular": "0.1000.8",
