@@ -2,4 +2,4 @@
 .idea
 
 # Ignore all Node.js and NPM related paths
-node_modules
+/node_modules
