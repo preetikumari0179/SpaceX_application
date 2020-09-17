@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { HttpClient } from "@angular/common/http";
+import {Component} from '@angular/core';
+import {HttpClient} from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +7,7 @@ import { HttpClient } from "@angular/common/http";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-starter';
+  title = 'spacex-application-app';
   version = 'Angular version 10.0.14';
 
   dataList: any;
